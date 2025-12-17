@@ -1,6 +1,8 @@
 name: Installing Python
 
-on: [push]
+on:
+ - push
+ - workflow_dispatch
 
 jobs:
   build:
@@ -11,3 +13,4 @@ jobs:
       with:
         python-version: 3.10
         
+
